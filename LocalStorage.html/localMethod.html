@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Local storage</h1>
+    <input type="text" name="" id="name" placeholder="name" /><br /><br /><br />
+    <input
+      type="text"
+      name=""
+      id="lname"
+      placeholder="last name"
+    /><br /><br /><br />
+    <button type="submit" id="display">submit</button>
+    <h2></h2>
+    <script>
+      var name = document.getElementById("name");
+      var lname = document.getElementById("lname");
+      var displayName = document.getElementById("display");
+      var h2 = document.querySelector("h2");
+      var n = name.value;
+      localStorage.setItem("name", n);
+      localStorage.setItem("lname", n);
+      displayName.addEventListener("click", function (e) {
+        // e.preventDefault();
+        h2.innerHTML = localStorage.getItem("lname");
+        h2.innerHTML = name.value;
+      });
+    </script>
+  </body>
+</html>

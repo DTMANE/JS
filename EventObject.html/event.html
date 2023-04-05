@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Event object</h1>
+    <p></p>
+    <h2></h2>
+    <script>
+      const event = document.querySelector("h1");
+      const event1 = document.querySelector("h2");
+      const title = document.querySelector("p");
+      event.addEventListener("click", function (event) {
+        title.innerHTML = event.currentTarget;
+        event1.innerHTML = this;
+        // event1.innerHTML = event.eventType;
+      });
+    </script>
+  </body>
+</html>

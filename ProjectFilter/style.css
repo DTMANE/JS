@@ -1,0 +1,30 @@
+* {
+  margin: 0%;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: rgb(238, 251, 251);
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 7vh;
+  /* flex-direction: column; */
+}
+.title {
+  text-align: center;
+  letter-spacing: 0.2rem;
+  font-size: x-large;
+}
+.underline {
+  width: 17vw;
+  height: 0vh;
+  border: 2px solid rgb(233, 179, 43);
+}
+.section-centre,
+section-centre1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  width: 20vw;
+}

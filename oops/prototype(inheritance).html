@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prototype</title>
+  </head>
+  <body>
+    <script>
+      function Person(name, balance) {
+        this.name = name;
+        this.balance = balance;
+        (this.deposit = function (amount) {
+          this.balance += amount;
+          console.log(`Hello ${this.name} and your balance is ${this.balance}`);
+        }),
+          (this.withdraw = function (amount) {
+            this.balance -= amount;
+            console.log(
+              `Hello ${this.name} and your balance is ${this.balance}`
+            );
+          });
+      }
+      const person = new Person("Dinesh", 100);
+      const person2 = new Person("Mane", 200);
+      person.withdraw(20);
+      person2.withdraw(20);
+
+      // prototype (inheritances)
+      Person.prototype.checkBalance = function () {
+        console.log(`Hello ${this.name} and your balance is ${this.balance}`);
+      };
+
+      person.checkBalance();
+    </script>
+  </body>
+</html>

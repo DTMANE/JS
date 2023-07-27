@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .red {
+        background-color: red;
+      }
+      .black {
+        background-color: rgb(0, 0, 0);
+      }
+      .green {
+        background-color: rgb(0, 255, 26);
+      }
+      .white {
+        background-color: rgba(231, 237, 255, 0.711);
+      }
+      .purple {
+        background-color: rgb(6, 24, 128);
+      }
+    </style>
+  </head>
+  <body id="b">
+    <button id="red" onclick="changeBg('red')">Red</button><br /><br />
+    <button id="black" onclick="changeBg('black')">Black</button><br /><br />
+    <button id="green" onclick="changeBg('green')">Green</button><br /><br />
+    <button id="white" onclick="changeBg('white')">White</button><br /><br />
+    <button id="purple" onclick="changeBg('purple')">Purple</button><br />
+
+    <script>
+      const bdy = document.getElementById("b");
+      function changeBg(c) {
+        bdy.className = c;
+      }
+    </script>
+  </body>
+</html>

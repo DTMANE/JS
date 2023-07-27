@@ -1,0 +1,17 @@
+.root {
+  --clr-bgr: rgb(237, 65, 65);
+  --clg-font: black;
+}
+.nightMode {
+  --clr-bgr: black;
+  --clg-font: white;
+}
+body {
+  background-color: --clr-bgr;
+}
+
+#t {
+  color: --clr-font;
+  text-transform: capitalize;
+  font-size: 4rem;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let people = [
+        { name: "dinesh", age: 25, position: "Developer" },
+        { name: "bobo", age: 29, position: "Tester" },
+        { name: "peter", age: 35, position: "Developer" },
+        { name: "john", age: 50, position: "Tester" },
+      ];
+      var devPeople = people.filter(function (people) {
+        if (people.position == "Developer") {
+          console.log(people.name);
+        }
+      });
+      // console.log(devPeople);
+    </script>
+  </body>
+</html>

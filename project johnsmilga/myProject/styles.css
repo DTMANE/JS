@@ -1,0 +1,12 @@
+* {
+  margin: auto;
+}
+.form {
+  width: 200px;
+  height: 100px;
+  border: 2px solid #010101;
+  margin: 50px auto;
+}
+.inputBox {
+  margin: 40px 15px;
+}

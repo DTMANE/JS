@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables</title>
+  </head>
+  <body>
+    <script>
+      //  var
+      var variables = 10;
+      variables = 20;
+      //  update possible
+      console.log(variables);
+
+      var variables = 30;
+      console.log(variables);
+
+      // let
+      let l = 10;
+      l = 20;
+      // update possible
+      console.log(l);
+      // redefine not   possible
+
+      // let l = 30;
+
+      // const
+
+      const a = "Dinesh";
+      // update not possible
+      // redefine not possible
+      // const a = "Mane";
+      // console.log(a);
+
+      // const update possible by object
+      let obj = {
+        name: "Dinesh",
+      };
+      obj.name = "Mane";
+      console.log(obj.name);
+
+      // functional scope
+
+      let l1 = 10;
+      let bln = true;
+      if (bln) {
+        l1 = 20;
+        console.log(l1);
+      }
+      console.log(l1);
+    </script>
+  </body>
+</html>

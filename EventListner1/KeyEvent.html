@@ -14,10 +14,15 @@
       autofocus
       placeholder="Enter your name"
     />
+    <h1 id="h1">Heading</h1>
     <script>
       var input = document.getElementById("name");
       input.addEventListener("keyup", function () {
         input.value = input.value.toUpperCase();
+      });
+      var heading = document.getElementById("h1");
+      heading.addEventListener("mouseleave", function () {
+        console.log("mouseDown");
       });
     </script>
   </body>

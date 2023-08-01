@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const obj = {
+        name: "Dinesh",
+        lastName: "Mane",
+        greet: function () {
+          console.log(`my name is ${this.name} ${this.lastName}`);
+        },
+      };
+      const obj2 = {
+        name: "Dinesh2",
+        lastName: "Mane2",
+      };
+      function greet2() {
+        console.log(`my name is ${this.name} ${this.lastName}`);
+      }
+      // obj.greet();
+      greet2.call(obj2); // call function
+      // greet.call({ name: "D", lastName: "M" });
+      // obj.greet.call(obj2);
+    </script>
+  </body>
+</html>

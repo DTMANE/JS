@@ -7,6 +7,17 @@
     <title>Document</title>
   </head>
   <body>
+    <input
+      type="text"
+      name=""
+      id="search"
+      placeholder="Search..."
+      autofocus
+      onkeyup="display()"
+    />
+    <br /><br />
+    <h3 id="displayArea"></h3>
+
     <script>
       let people = [
         { name: "dinesh", age: 25, position: "Developer" },
@@ -14,11 +25,26 @@
         { name: "peter", age: 35, position: "Developer" },
         { name: "john", age: 50, position: "Tester" },
       ];
-      var devPeople = people.filter(function (people) {
-        if (people.position == "Developer") {
-          console.log(people.name);
-        }
-      });
+      let search = document.getElementById("search");
+      var pr = [...people];
+      function display() {
+        console.log(search.value);
+        people.filter((a) => {
+          if (a.name.includes(search.value)) {
+            console.log(a.name);
+            pr = a.name;
+          }
+        });
+      }
+      console.log(pr.length);
+
+      // var devPeople = people.filter(function (people) {
+      //   if (people.position == "Tester") {
+      //     console.log(people.name);
+      //   }
+      // });
+      // search.addEventListener("keyup", devPeople);
+
       // console.log(devPeople);
     </script>
   </body>

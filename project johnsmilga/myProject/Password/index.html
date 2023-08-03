@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" id="form">
+      <input
+        type="password"
+        name=""
+        id="pwd"
+        autofocus
+        placeholder="password..."
+      />
+      <br /><br />
+      <input type="submit" value="submit" id="btn" onsubmit="verify()" />
+    </form>
+    <script>
+      var form = document.getElementById("form");
+      var password = document.getElementById("pwd");
+      var sbtn = document.getElementById("btn");
+      function verify(e) {
+        e.preventDefault();
+        console.log("Enter your password");
+        if (password.value == "Dinesh") {
+          console.log("Login successful");
+        }
+      }
+    </script>
+  </body>
+</html>

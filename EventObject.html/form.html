@@ -25,6 +25,7 @@
       var submit = document.getElementById("submit");
       submit.addEventListener("click", function (e) {
         e.preventDefault();
+        alert("Success!");
         localStorage.setItem(username.value, lastName.value);
         // console.log(username.value);
         console.log(localStorage.getItem(username.value));

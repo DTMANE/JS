@@ -22,10 +22,19 @@
       function greet2() {
         console.log(`my name is ${this.name} ${this.lastName}`);
       }
+
+      // In call function we pass argument in form list of item
       // obj.greet();
-      greet2.call(obj2); // call function
+      // greet2.call(obj2); // call function
       // greet.call({ name: "D", lastName: "M" });
       // obj.greet.call(obj2);
+
+      // by using call function we can call the function by using other object
+
+      // apply method
+      // In apply function we pass argument in form array of items
+
+      greet2.apply(obj);
     </script>
   </body>
 </html>

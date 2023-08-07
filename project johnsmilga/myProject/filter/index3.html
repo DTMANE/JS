@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="" id="scaner" placeholder="Search.." autofocus />
+    <br /><br />
+    <h3 id="r"></h3>
+    <script>
+      var search = document.getElementById("scaner");
+      var result = document.getElementById("r");
+      var arr = {};
+      search.addEventListener("keyup", function () {
+        console.log(search.value);
+        obj.filter(function (names) {
+          if (names.name.includes(search.value)) {
+            arr = names;
+
+            // result.innerHTML = `my name is ${names.name} and working as a ${names.job}`;
+          }
+        });
+        console.log(arr.lenght());
+      });
+      const obj = [
+        { name: "dinesh", job: "developer" },
+        { name: "abhi", job: "developer" },
+        { name: "rada", job: "developer" },
+      ];
+    </script>
+  </body>
+</html>
